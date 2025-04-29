@@ -4,32 +4,27 @@
 :root {
 
     /* Colours */
-    --color-primary: var(--ghost-accent-color, #3eb0ef);
-    --color-base: #131313;
-    --color-border: #ddd;
-    --color-bg: #f5f5f5;
+
+    --color-black: #293C56;
+    --color-grey-dark: #5D6970;
+    --color-orange: #C45D3E;
+    --color-cream: #F9F5EB;
+    --color-cream-light: #FEFAF6;
+    --color-green-light: rgba(122, 158, 126, 0.20);
+
+    --color-primary: var(--color-black);
+    --color-secondary: var(--color-grey-dark);
+    --color-accent: var(--color-orange);
+
+    --color-background-primary: var(--color-cream);
+    --color-background-secondary: var(--color-cream-light);
+
     --color-success: #80b912;
     --color-error: #f05230;
 
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: Menlo, Courier, monospace;
-    --font-light: 100;
-    --font-normal: 400;
-    --font-bold: 700;
-    --font-heavy: 800;
-
-    /* Breakpoints */
-    --xlarge: 1680px;
-    --large: 1280px;
-    --medium: 980px;
-    --small: 740px;
-    --xsmall: 480px;
-
-    /* Sizes */
-    --height: 4rem;
-    --margin: 2rem;
-    --radius: 0.5rem;
+    --font-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: Athelas, Times, serif;
+    --font-mono: "IBM Plex Mono", Courier, monospace;
 
 }
