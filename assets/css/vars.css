@@ -19,6 +19,9 @@
     --color-background-primary: var(--color-cream);
     --color-background-secondary: var(--color-cream-light);
 
+    --color-button-primary: var(--color-cream);
+    --color-button-secondary: var(--color-secondary);
+
     --color-success: #80b912;
     --color-error: #f05230;
 

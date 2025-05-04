@@ -1,0 +1,14 @@
+/* Navigation ********************************************************************************** Navigation */
+
+.navigation {
+  &__list {
+    column-gap: clamp(3rem, 2.286rem + 1.19vw, 4rem);
+  }
+
+  &__item {
+    font-size: clamp(1.2rem, 1.057rem + 0.238vw, 1.4rem);
+    font-weight: 400;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+  }
+}

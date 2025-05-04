@@ -15,6 +15,8 @@ import postcss from 'rollup-plugin-postcss';
 import atImport from 'postcss-import';
 // Use the latest CSS features in your Rollup bundle
 import postcssPresetEnv from 'postcss-preset-env';
+// PostCSS nested
+import postcssNested from 'postcss-nested';
 
 // Development: Enables a livereload server that watches for changes to CSS, JS, and Handlbars files
 import { resolve } from "path";
@@ -38,6 +40,7 @@ export default defineConfig({
             sourceMap: true,
             plugins: [
                 atImport(),
+                postcssNested(),
                 postcssPresetEnv({})
             ], 
             minimize: true,

@@ -1,0 +1,36 @@
+/* Button ********************************************************************************** Button */
+
+.button,
+a.button {
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    
+    padding: clamp(1.2rem, 1.057rem + 0.238vw, 1.4rem) clamp(2rem, 1.714rem + 0.476vw, 2.4rem);
+    border-radius: 999px;
+    overflow: hidden;
+    
+    font-size: clamp(1.4rem, 1.114rem + 0.476vw, 1.8rem);
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: var(--color-button-primary);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button.button--accent,
+a.button.button--accent {
+    background-image: url(../images/buttons/accent.svg);
+    border: 1px solid var(--color-button-primary);
+    color: var(--color-button-primary);
+}
+
+.button.button--default,
+a.button.button--default {
+    background-image: url(../images/buttons/default.svg);
+    border: 1px solid var(--color-button-secondary);
+    color: var(--color-button-secondary);
+}
