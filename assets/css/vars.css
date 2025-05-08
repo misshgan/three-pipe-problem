@@ -10,6 +10,7 @@
     --color-orange: #C45D3E;
     --color-cream: #F9F5EB;
     --color-cream-light: #FEFAF6;
+    --color-green: #7A9E7E;
     --color-green-light: rgba(122, 158, 126, 0.20);
 
     --color-primary: var(--color-black);
@@ -19,8 +20,8 @@
     --color-background-primary: var(--color-cream);
     --color-background-secondary: var(--color-cream-light);
 
-    --color-button-primary: var(--color-cream);
-    --color-button-secondary: var(--color-secondary);
+    --color-button-accent: var(--color-cream);
+    --color-button: var(--color-secondary);
 
     --color-success: #80b912;
     --color-error: #f05230;

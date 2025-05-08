@@ -30,10 +30,18 @@ h1, h2, h3, h4, h5, h6 {
 /* Tertiary */
 
 .heading-tertiary {
-    font-size: clamp(2.4rem, 1.857rem + 1.429vw, 3.2rem);
+    font-size: clamp(2.6rem, 1.886rem + 1.19vw, 3.6rem);
     font-weight: 400;
     line-height: normal;
     font-style: normal;
+}
+
+/* Quaternary */
+
+.heading-quaternary {
+    font-size: clamp(1.6rem, 1.171rem + 0.714vw, 2.2rem);
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* Quote ********************************************************************************** Quote */
@@ -42,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-secondary);
     font-style: italic;
     font-weight: 400;
+    font-family: var(--font-mono);
     line-height: normal;
 }
 

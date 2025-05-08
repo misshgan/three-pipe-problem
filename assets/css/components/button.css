@@ -2,7 +2,9 @@
 
 .button,
 a.button {
-    display: block;
+    display: flex;
+    align-items: center;
+    column-gap: clamp(0.8rem, 0.657rem + 0.238vw, 1rem);
     width: 100%;
     max-width: max-content;
     
@@ -24,13 +26,18 @@ a.button {
 .button.button--accent,
 a.button.button--accent {
     background-image: url(../images/buttons/accent.svg);
-    border: 1px solid var(--color-button-primary);
-    color: var(--color-button-primary);
+    outline: 1px solid var(--color-accent);
+    color: var(--color-button-accent);
+
+    svg {
+        width: clamp(1.7rem, 1.129rem + 0.952vw, 2.5rem);
+        height: auto;
+    }
 }
 
 .button.button--default,
 a.button.button--default {
     background-image: url(../images/buttons/default.svg);
-    border: 1px solid var(--color-button-secondary);
-    color: var(--color-button-secondary);
+    border: 1px solid var(--color-button);
+    color: var(--color-button);
 }

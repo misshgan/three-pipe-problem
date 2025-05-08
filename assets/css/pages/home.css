@@ -1,0 +1,263 @@
+/* Home ********************************************************************************** Home */
+
+.home {
+
+  /* Hero ************************************************************ Hero */
+
+  .hero {
+    padding: 10rem 0 clamp(10rem, 5rem + 8.333vw, 17rem);
+
+    .wrapper {
+      column-gap: 10rem;
+    }
+
+    &__text {
+      max-width: 78rem;
+
+      .heading-primary + p {
+        margin-top: 1.6rem;
+      }
+
+      .quote {
+        margin-top: 2rem;
+        padding-left: clamp(2rem, 1.643rem + 0.595vw, 2.5rem);
+        color: var(--color-accent);
+        font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 1rem;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 110%;
+          background-color: var(--color-accent);
+        }
+      }
+
+      .quote + p {
+        margin-top: 2rem;
+      }
+    }
+    &__buttons {
+      margin-top: clamp(3rem, 1.571rem + 2.381vw, 5rem);
+      column-gap: clamp(1.4rem, 0.971rem + 0.714vw, 2rem);
+    }
+    &__image {
+    }
+  }
+
+  /* Book Details ************************************************************ Book Details */
+
+  .book-details {
+    padding-top: clamp(7rem, 4.857rem + 3.571vw, 10rem);
+    padding-bottom: clamp(7rem, 4.857rem + 3.571vw, 10rem);
+    background-color: var(--color-cream-light);
+
+    .wrapper {
+      
+    }
+
+    &__group {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      justify-items: center;
+      column-gap: 5rem;
+      margin-top: clamp(4.5rem, 3.143rem + 2.262vw, 6.4rem);
+      margin-bottom: clamp(6rem, 3.143rem + 4.762vw, 10rem);
+    }
+
+    .heading-secondary,
+    .heading-secondary + p {
+      max-width: 67rem;
+      text-align: center;
+    }
+
+    .heading-secondary + p {
+      margin-top: 1.4rem;
+    }
+
+    &__left {
+    }
+    &__image {}
+    &__right {
+
+      .heading-tertiary {
+        margin-bottom: clamp(1.6rem, 0.6rem + 1.667vw, 3rem);
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.6rem
+    }
+    &__item {
+      display: flex;
+      column-gap: clamp(1rem, 0.429rem + 0.952vw, 1.8rem);
+      align-items: center;
+
+      svg {
+        flex-shrink: 0;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.4rem;
+      }
+    }
+    &__buttons {
+      margin-top: 3.4rem;
+      display: flex;
+      column-gap: clamp(1.4rem, 0.971rem + 0.714vw, 2rem);
+
+      .button {
+      }
+    }
+    .quote {
+      text-align: center;
+      max-width: 84.4rem;
+
+      color: var(--color-accent);
+      font-size: clamp(2rem, 1.571rem + 0.714vw, 2.6rem);
+    }
+  }
+  
+  /* Are You ************************************************************ Are You */
+
+  .are-you {
+    padding-top: clamp(10rem, 5rem + 8.333vw, 17rem);
+    padding-bottom: clamp(10rem, 5rem + 8.333vw, 17rem);
+
+    &__group {
+      max-width: 55rem
+    }
+
+    .wrapper {
+      
+    }
+    .heading-secondary {
+      margin-bottom: 1.4rem;
+    }
+    .paragraph {
+    }
+  }
+
+  /* For Whom ************************************************************ For Whom */
+
+  .for-whom {
+    margin: clamp(10rem, 5rem + 8.333vw, 17rem) 0 10rem;
+
+    .wrapper {
+    }
+    .heading-secondary {
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 110%;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+    .for-whom-card {
+      background-image: url(../images/home/for-whom/card-background.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: clamp(2.8rem, 2.229rem + 0.952vw, 3.6rem) clamp(1.8rem, 1.086rem + 1.19vw, 2.8rem);
+
+      &__number {
+        position: relative;
+        max-width: max-content;
+
+        span {
+          position: absolute;
+          line-height: 1;
+          font-family: var(--font-serif);
+          top: 2px;
+          left: 50%;
+          font-size: 2rem;
+          color: var(--color-green);
+          transform: translateX(-50%)
+        }
+      }
+    }
+    .heading-quaternary {
+      margin-top: clamp(2rem, 1.714rem + 0.476vw, 2.4rem);
+    }
+    .paragraph {
+      margin-top: clamp(0.5rem, 0.357rem + 0.238vw, 0.7rem);
+    }  
+    
+    &__cards {
+      margin-top: 6rem;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(1rem, -0.429rem + 2.381vw, 3rem);
+    }
+    &__card {
+    }
+  }
+
+  /* Big Quote ************************************************************ Big Quote */
+
+  .big-quote {
+    margin-bottom: clamp(10rem, 5rem + 13.333vw, 17rem);
+
+    .wrapper {
+      max-width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+    }
+
+    .quote {
+      font-size: clamp(2.4rem, 1.829rem + 1.524vw, 3.2rem);
+      color: var(--color-accent);
+      text-align: center;
+      max-width: 90rem;
+    }
+  }
+
+  /* Reviews ************************************************************ Reviews */
+
+  .reviews {
+    margin-bottom: clamp(10rem, 5rem + 8.333vw, 17rem);
+
+    .wrapper {
+      row-gap: clamp(3rem, 0.857rem + 3.571vw, 6rem);
+    }
+    .heading-secondary {
+      position: relative;
+      text-align: center;
+      width: 100%;
+
+      svg {
+        position: absolute;
+        right: -5%;
+        top: -35%;
+        z-index: -1;
+      }
+    }
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(1rem, 0.286rem + 1.19vw, 2rem);
+    }
+    &__card {}
+  }
+  
+}

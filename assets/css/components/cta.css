@@ -1,0 +1,59 @@
+/* CTA ************************************************************ CTA */
+
+.cta {
+
+  .wrapper {
+    text-align: center;
+    background-color: var(--color-green-light);
+    padding-top: clamp(7rem, 6.286rem + 1.19vw, 8rem);
+    padding-bottom: clamp(7rem, 6.286rem + 1.19vw, 8rem);
+    position: relative;
+  }
+
+  .heading-tertiary,
+  .paragraph {
+    max-width: 74rem
+  }
+  .paragraph {
+    margin-top: 1.4rem;
+  }
+
+  &__buttons {
+    margin-top: clamp(3rem, 2.714rem + 0.476vw, 3.4rem);
+    display: flex;
+    align-items: center;
+    column-gap: clamp(1.4rem, 0.971rem + 0.714vw, 2rem);
+  }
+
+  .wrapper > svg {
+    left: -8%;
+    position: absolute;
+    top: -15%;
+  }
+}
+
+/* CTA -- Subscribe ************************************************************ CTA -- Subscribe */
+
+.cta.cta--subscribe {
+  position: relative;
+
+  .heading-secondary {
+    max-width: 74rem;
+    position: relative;
+
+    svg {
+      width: 110%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -17.5%;
+    }
+  }
+
+  & > svg {
+    position: absolute;
+    right: -10%;
+    top: 65%;
+    width: 40%;
+  }
+}

@@ -144,12 +144,59 @@ a[class]:hover {
     }
 }
 
-/* Wrapper ********************************************************************************** Wrapper */
+/* Container ********************************************************************************** Container */
 
-.wrapper {
+.container-main {
     width: 100%;
-    max-width: 1280px;
+    max-width: calc(1280px + 4.8rem);
+    margin: 0 auto;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    margin: 0 auto;
 }
+
+.container-narrow {
+    width: 100%;
+    max-width: calc(1080px + 4.8rem);
+    margin: 0 auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+/* Border Lines ********************************************************************************** Border Lines */
+
+.with-border-lines {
+    position: relative;
+
+    .border-left {
+        position: absolute;
+        top: 0;
+        left: -0.4rem;
+        width: auto;
+        height: 100%;
+    }
+
+    .border-top {
+        position: absolute;
+        top: -0.4rem;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .border-right {
+        position: absolute;
+        top: 0;
+        right: -0.4rem;
+        width: auto;
+        height: 100%;
+    }
+
+    .border-bottom {
+        position: absolute;
+        bottom: -0.4rem;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+

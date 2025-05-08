@@ -1,0 +1,31 @@
+/* Review Card ************************************************************ Review Card */
+
+.review-card {
+  padding: clamp(4rem, 3.286rem + 1.19vw, 5rem) 2.4rem;
+  background-color: var(--color-background-primary);
+  background-image: url(../images/home/reviews/card-background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  .border-line {
+    opacity: 0.4;
+  }
+
+  &__quote {
+    margin-bottom: clamp(2.8rem, 2.371rem + 0.714vw, 3.4rem);
+
+    font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+    font-family: var(--font-mono);
+  }
+  &__author {
+    font-size: clamp(1.2rem, 0.914rem + 0.476vw, 1.6rem);
+    font-weight: 500;
+  }
+  &__role {
+    margin-top: .4rem;
+
+    font-size: clamp(1.2rem, 0.914rem + 0.476vw, 1.6rem);
+    color: var(--color-secondary);
+  }
+}

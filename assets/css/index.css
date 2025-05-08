@@ -17,3 +17,8 @@
 @import "components/button.css";
 @import "components/navigation.css";
 @import "components/header.css";
+@import "components/cta.css";
+@import "components/section-about.css";
+@import "components/review-card.css";
+/* Pages */
+@import "pages/home.css";
